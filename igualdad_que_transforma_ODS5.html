@@ -1,0 +1,509 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Proyecto educativo sobre el ODS 5: Igualdad de género.">
+<title>Igualdad que transforma | ODS 5</title>
+
+<style>
+:root {
+  --rosa: #e83e72;
+  --rosa-claro: #fff0f5;
+  --morado: #56245f;
+  --oscuro: #292337;
+  --fondo: #fffafd;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--oscuro);
+  background: var(--fondo);
+  line-height: 1.7;
+}
+header {
+  background: linear-gradient(135deg, #70266d, #e83e72);
+  color: white;
+  padding: 18px 7%;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+.logo { font-weight: bold; font-size: 1.15rem; }
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 5px 8px;
+}
+nav a:hover { text-decoration: underline; }
+
+.hero {
+  padding: 70px 8%;
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 35px;
+  align-items: center;
+  background: linear-gradient(135deg, #fff0f5, #f3e5ff);
+}
+.hero h1 {
+  font-size: clamp(2.5rem, 5vw, 4.3rem);
+  line-height: 1.1;
+  color: var(--morado);
+}
+.hero h2 { color: var(--rosa); }
+.hero img {
+  width: 100%;
+  border-radius: 22px;
+  box-shadow: 0 12px 35px #54245120;
+}
+.etiqueta {
+  display: inline-block;
+  background: #ffe0eb;
+  color: #8d2050;
+  padding: 7px 14px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: .85rem;
+}
+.boton {
+  display: inline-block;
+  background: var(--rosa);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 7px 5px 0 0;
+}
+section { padding: 55px 8%; scroll-margin-top: 20px; }
+section h2 { color: var(--morado); font-size: 2rem; }
+.subtitulo { color: #66586a; max-width: 850px; }
+.fondo-rosa { background: var(--rosa-claro); }
+
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+  margin-top: 25px;
+}
+.tarjeta {
+  background: white;
+  padding: 24px;
+  border-radius: 15px;
+  box-shadow: 0 5px 22px #3a173b10;
+  border-top: 4px solid var(--rosa);
+}
+.tarjeta h3 { color: var(--morado); }
+.icono { font-size: 2rem; }
+
+.integrante {
+  background: white;
+  border: 1px solid #efd8e5;
+  border-radius: 16px;
+  padding: 20px;
+}
+.foto {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  background: #f5e6ef;
+}
+.campo {
+  padding: 9px 0;
+  border-bottom: 1px solid #eee;
+}
+.campo strong { color: var(--morado); }
+
+.recurso {
+  display: block;
+  padding: 16px;
+  border-radius: 10px;
+  background: white;
+  border: 1px solid #ead8e8;
+  color: var(--morado);
+  text-decoration: none;
+  margin-top: 12px;
+}
+.recurso:hover { background: #fff0f5; }
+.nota { color: #756778; font-size: .9rem; }
+
+footer {
+  background: #321b3c;
+  color: white;
+  text-align: center;
+  padding: 35px 8%;
+}
+footer h2 { color: white; }
+
+@media(max-width:720px) {
+  .hero { grid-template-columns: 1fr; padding: 40px 7%; }
+  nav { justify-content: center; }
+  section { padding: 40px 7%; }
+}
+</style>
+</head>
+
+<body>
+<header>
+  <nav>
+    <div class="logo">🌸 IGUALDAD QUE TRANSFORMA</div>
+    <div>
+      <a href="#inicio">Inicio</a>
+      <a href="#ods">ODS 5</a>
+      <a href="#metas">Metas</a>
+      <a href="#equipo">Integrantes</a>
+      <a href="#recursos">Recursos</a>
+      <a href="#conclusion">Conclusión</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+<!-- PORTADA -->
+<section class="hero" id="inicio">
+  <div>
+    <span class="etiqueta">AGENDA 2030 · OBJETIVO 5</span>
+    <h1>Igualdad que transforma</h1>
+    <h2>ODS 5: Igualdad de género</h2>
+
+    <p>
+      Construyendo un futuro donde todas las personas tengan
+      los mismos derechos, oportunidades y libertad para
+      desarrollar su potencial.
+    </p>
+
+    <p><strong>Asignatura:</strong><br>
+    Estrategias y herramientas digitales para el aprendizaje</p>
+
+    <p><strong>Integrantes:</strong><br>
+    Sharon Mendoza<br>
+    Henry Mamani</p>
+
+    <a class="boton" href="#ods">Conocer el ODS 5</a>
+    <a class="boton" href="#equipo">Nuestro equipo</a>
+  </div>
+
+  <img
+    src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1000&q=85"
+    alt="Mujer en un entorno profesional">
+</section>
+
+<!-- PRESENTACIÓN -->
+<section id="presentacion">
+  <h2>Bienvenidos a nuestro sitio web</h2>
+  <p>
+    Somos Sharon Mendoza y Henry Mamani. En este proyecto de la
+    asignatura Estrategias y herramientas digitales para el
+    aprendizaje presentamos información sobre el Objetivo de
+    Desarrollo Sostenible número 5: igualdad de género.
+  </p>
+  <p>
+    Nuestro propósito es promover la reflexión sobre la igualdad
+    de derechos y oportunidades, así como la importancia de
+    construir una sociedad inclusiva, respetuosa y libre de violencia.
+  </p>
+</section>
+
+<!-- ODS -->
+<section class="fondo-rosa" id="ods">
+  <span class="etiqueta">CONOCE NUESTRO OBJETIVO</span>
+  <h2>¿Qué es el ODS 5?</h2>
+  <p>
+    El Objetivo de Desarrollo Sostenible 5 forma parte de los
+    17 objetivos de la Agenda 2030 de las Naciones Unidas.
+    Busca lograr la igualdad de género y empoderar a todas
+    las mujeres y las niñas.
+  </p>
+
+  <div class="tarjetas">
+    <article class="tarjeta">
+      <div class="icono">⚖️</div>
+      <h3>Igualdad de derechos</h3>
+      <p>Promover la justicia, el respeto y las oportunidades equitativas.</p>
+    </article>
+    <article class="tarjeta">
+      <div class="icono">🎓</div>
+      <h3>Educación para todos</h3>
+      <p>Favorecer el acceso equitativo a la educación y la tecnología.</p>
+    </article>
+    <article class="tarjeta">
+      <div class="icono">🛡️</div>
+      <h3>Vida libre de violencia</h3>
+      <p>Prevenir la violencia y la discriminación contra mujeres y niñas.</p>
+    </article>
+  </div>
+</section>
+
+<!-- IMPORTANCIA -->
+<section id="importancia">
+  <h2>¿Por qué es importante la igualdad de género?</h2>
+  <p>
+    La igualdad de género es fundamental para construir sociedades
+    justas, inclusivas y sostenibles. Todas las personas deben
+    tener los mismos derechos y oportunidades para desarrollarse,
+    estudiar, trabajar y participar en las decisiones de su comunidad.
+  </p>
+
+  <div class="tarjetas">
+    <article class="tarjeta">
+      <h3>📚 Educación</h3>
+      <p>Eliminar estereotipos y garantizar oportunidades educativas.</p>
+    </article>
+    <article class="tarjeta">
+      <h3>💼 Trabajo</h3>
+      <p>Promover la igualdad de oportunidades y la remuneración justa.</p>
+    </article>
+    <article class="tarjeta">
+      <h3>🤝 Sociedad</h3>
+      <p>Fomentar el respeto y la participación en la toma de decisiones.</p>
+    </article>
+  </div>
+</section>
+
+<!-- METAS -->
+<section class="fondo-rosa" id="metas">
+  <h2>Metas principales del ODS 5</h2>
+  <p>
+    Las metas del ODS 5 orientan las acciones para avanzar hacia
+    la igualdad de género en todos los ámbitos de la sociedad.
+  </p>
+
+  <div class="tarjetas">
+    <article class="tarjeta">
+      <h3>Meta 5.1</h3>
+      <p>Poner fin a todas las formas de discriminación contra las mujeres y las niñas.</p>
+    </article>
+    <article class="tarjeta">
+      <h3>Meta 5.2</h3>
+      <p>Eliminar la violencia contra mujeres y niñas en ámbitos públicos y privados.</p>
+    </article>
+    <article class="tarjeta">
+      <h3>Meta 5.3</h3>
+      <p>Eliminar prácticas perjudiciales, como el matrimonio infantil y forzado.</p>
+    </article>
+    <article class="tarjeta">
+      <h3>Meta 5.4</h3>
+      <p>Reconocer el trabajo doméstico y de cuidados no remunerado.</p>
+    </article>
+    <article class="tarjeta">
+      <h3>Meta 5.5</h3>
+      <p>Garantizar la participación de las mujeres en el liderazgo y la toma de decisiones.</p>
+    </article>
+    <article class="tarjeta">
+      <h3>Meta 5.b</h3>
+      <p>Promover el uso de tecnologías para empoderar a las mujeres.</p>
+    </article>
+  </div>
+</section>
+
+<!-- DESAFÍOS -->
+<section id="desafios">
+  <h2>Desafíos para alcanzar la igualdad</h2>
+  <div class="tarjetas">
+    <article class="tarjeta">
+      <h3>Discriminación</h3>
+      <p>Los prejuicios pueden limitar los derechos y las oportunidades.</p>
+    </article>
+    <article class="tarjeta">
+      <h3>Violencia de género</h3>
+      <p>La violencia afecta la seguridad, la libertad y el bienestar.</p>
+    </article>
+    <article class="tarjeta">
+      <h3>Brecha de oportunidades</h3>
+      <p>Persisten diferencias en el acceso al empleo, los recursos y el liderazgo.</p>
+    </article>
+  </div>
+</section>
+
+<!-- INTEGRANTES -->
+<section class="fondo-rosa" id="equipo">
+  <h2>Integrantes del equipo</h2>
+  <p class="subtitulo">
+    Proyecto de la asignatura Estrategias y herramientas digitales
+    para el aprendizaje.
+  </p>
+
+  <div class="tarjetas">
+    <article class="integrante">
+      <img class="foto"
+        src="https://placehold.co/500x350/f5dce8/56245f?text=Foto+de+Sharon"
+        alt="Espacio para la fotografía de Sharon Mendoza">
+      <h3>Sharon Mendoza</h3>
+      <div class="campo">
+        <strong>Código de estudiante:</strong> Por completar
+      </div>
+      <div class="campo">
+        <strong>Carrera profesional:</strong> Por completar
+      </div>
+      <p class="nota">Reemplazar la imagen por su fotografía.</p>
+    </article>
+
+    <article class="integrante">
+      <img class="foto"
+        src="https://placehold.co/500x350/e9dcf5/56245f?text=Foto+de+Henry"
+        alt="Espacio para la fotografía de Henry Mamani">
+      <h3>Henry Mamani</h3>
+      <div class="campo">
+        <strong>Código de estudiante:</strong> Por completar
+      </div>
+      <div class="campo">
+        <strong>Carrera profesional:</strong> Por completar
+      </div>
+      <p class="nota">Reemplazar la imagen por su fotografía.</p>
+    </article>
+  </div>
+</section>
+
+<!-- RECURSOS DIGITALES -->
+<section id="recursos">
+  <h2>Herramientas y recursos digitales</h2>
+  <p>
+    Utilizamos herramientas digitales para investigar, organizar,
+    representar y compartir información sobre la igualdad de género.
+  </p>
+
+  <article class="tarjeta">
+    <h3>🎬 Video educativo</h3>
+    <p>
+      Un video puede explicar el ODS 5, mostrar ejemplos de
+      desigualdad y presentar iniciativas para promover la igualdad.
+    </p>
+    <a class="recurso"
+      href="https://www.youtube.com/results?search_query=ODS+5+igualdad+de+genero"
+      target="_blank" rel="noopener">
+      Buscar videos sobre el ODS 5 ↗
+    </a>
+  </article>
+
+  <article class="tarjeta">
+    <h3>📊 Presentación de Google Slides</h3>
+    <p>
+      Elaboren diapositivas con las metas, los desafíos y las
+      propuestas para contribuir a la igualdad de género.
+    </p>
+    <a class="recurso" href="https://slides.google.com/"
+      target="_blank" rel="noopener">
+      Crear presentación en Google Slides ↗
+    </a>
+  </article>
+
+  <article class="tarjeta">
+    <h3>📄 Documento de investigación</h3>
+    <p>
+      Organicen la introducción, la investigación, las reflexiones,
+      las conclusiones y las referencias bibliográficas.
+    </p>
+    <a class="recurso" href="https://docs.google.com/document/u/0/"
+      target="_blank" rel="noopener">
+      Crear documento en Google Docs ↗
+    </a>
+  </article>
+
+  <article class="tarjeta">
+    <h3>🧩 Diagrama e infografía</h3>
+    <p>
+      Representen visualmente los desafíos de la igualdad de género,
+      sus consecuencias y las soluciones posibles.
+    </p>
+    <a class="recurso" href="https://www.canva.com/"
+      target="_blank" rel="noopener">
+      Crear infografía en Canva ↗
+    </a>
+  </article>
+
+  <article class="tarjeta">
+    <h3>🖼️ Galería de imágenes</h3>
+    <p>
+      Incluyan fotografías e ilustraciones sobre educación,
+      liderazgo, inclusión y respeto. Utilicen imágenes propias
+      o con licencias adecuadas.
+    </p>
+  </article>
+</section>
+
+<!-- ACCIONES -->
+<section class="fondo-rosa" id="acciones">
+  <h2>¿Cómo podemos contribuir?</h2>
+  <div class="tarjetas">
+    <article class="tarjeta">
+      <h3>01. Educar</h3>
+      <p>Investigar y compartir información confiable sobre igualdad.</p>
+    </article>
+    <article class="tarjeta">
+      <h3>02. Respetar</h3>
+      <p>Rechazar estereotipos, discriminación y violencia.</p>
+    </article>
+    <article class="tarjeta">
+      <h3>03. Participar</h3>
+      <p>Promover oportunidades equitativas en los estudios y la comunidad.</p>
+    </article>
+    <article class="tarjeta">
+      <h3>04. Compartir</h3>
+      <p>Distribuir las responsabilidades domésticas y de cuidado.</p>
+    </article>
+  </div>
+</section>
+
+<!-- CONCLUSIÓN -->
+<section id="conclusion">
+  <h2>Conclusión</h2>
+  <p>
+    La igualdad de género es esencial para construir una sociedad
+    justa, inclusiva y sostenible. El ODS 5 promueve la eliminación
+    de la discriminación, la prevención de la violencia y la igualdad
+    de oportunidades para mujeres y niñas.
+  </p>
+  <p>
+    Mediante las estrategias y herramientas digitales podemos
+    investigar, comunicar ideas y sensibilizar a la comunidad.
+    Como estudiantes, debemos promover el respeto, la inclusión
+    y la igualdad en nuestra vida cotidiana.
+  </p>
+  <h3>¡La igualdad transforma nuestro presente y nuestro futuro!</h3>
+</section>
+
+<!-- FUENTES -->
+<section class="fondo-rosa" id="fuentes">
+  <h2>Fuentes de información</h2>
+  <p>Fuentes oficiales para ampliar y verificar la información:</p>
+
+  <a class="recurso"
+    href="https://www.un.org/sustainabledevelopment/es/gender-equality/"
+    target="_blank" rel="noopener">
+    Naciones Unidas — Igualdad de género y ODS 5 ↗
+  </a>
+
+  <a class="recurso"
+    href="https://sdgs.un.org/goals/goal5"
+    target="_blank" rel="noopener">
+    Naciones Unidas — Objetivo 5 y metas oficiales ↗
+  </a>
+
+  <a class="recurso"
+    href="https://www.unwomen.org/es"
+    target="_blank" rel="noopener">
+    ONU Mujeres — Información sobre igualdad de género ↗
+  </a>
+</section>
+
+</main>
+
+<footer>
+  <h2>Igualdad que transforma 🌸</h2>
+  <p>ODS 5: Igualdad de género</p>
+  <p><strong>Asignatura:</strong> Estrategias y herramientas digitales para el aprendizaje</p>
+  <p><strong>Integrantes:</strong> Sharon Mendoza y Henry Mamani</p>
+  <p>Proyecto académico · 2026</p>
+</footer>
+
+</body>
+</html>
